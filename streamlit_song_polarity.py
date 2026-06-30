@@ -19,7 +19,7 @@ def main():
     st.write('Upload an Excel file with a "text" column containing song lyrics.')
 
     # File upload
-    uploaded_file = st.file_uploader("Upload an Excel file", type=['xlsx', 'xls'])
+    uploaded_file = st.file_uploader("Upload an Excel file", type=['xlsx', 'xls', 'csv'])
 
     if uploaded_file is not None:
         # Load data from uploaded file
